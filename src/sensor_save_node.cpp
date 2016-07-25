@@ -74,7 +74,7 @@ cv_bridge::CvImagePtr cv_RGB_ptr, cv_Depth_ptr;
 int main(int argc, char** argv)
 {
   ros::init(argc, argv, "sensor_save_node");
-
+  std::cout<<"Hello world!"<<std::endl;
   ros::NodeHandle nh;
   message_filters::Subscriber<Image> image1_sub(nh, "/rgb/image_raw", 1);
   message_filters::Subscriber<Image> image2_sub(nh, "/depth/image_raw", 1);
